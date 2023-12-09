@@ -6,6 +6,7 @@ import mongoose from "mongoose";
 import Product from './models/Product.js';
 import User from './models/User.js';
 import Order from './models/Order.js';
+
 const app=express();
 app.use(express.json())
 
@@ -43,6 +44,17 @@ app.post('/mens_products', async (req, res) => {
             message: e.message
         })
     }
+});
+
+app.get('/mens_products', async (req, res) => {
+
+    const products = await Product.find();
+
+    res.json({
+        success: true,
+        data: products,
+        message: 'Product Retrived successfully'
+    })
 });
 
 
