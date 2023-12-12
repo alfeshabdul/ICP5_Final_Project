@@ -1,6 +1,6 @@
 import {model, Schema}from "mongoose";
 
-const mensproductSchema= new Schema({
+const womensproductSchema= new Schema({
     image:{
         type: String,
         require: true
@@ -19,6 +19,6 @@ const mensproductSchema= new Schema({
     }
 });
 
-const mensproduct = model('MensProduct', mensproductSchema);
+const womensproduct = model('WomensProduct', womensproductSchema);
 
-export default mensproduct;
+export default womensproduct;
