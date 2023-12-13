@@ -1,7 +1,7 @@
 import React from 'react'
 import "./Home.css"
-// import Card from './../../components/Card/Card'
-// import Navbar from './../../components/Navbar/Navbar'
+import Card from '../../Component/Card/Card'
+import Navbar from '../../Component/Navbar/Navbar'
 import Img1 from "./img/carsoulimg.jpg"
 import Img2 from "./img/carsoulimg2.webp"
 import Img3 from "./img/carsoulimg3.jpg"
@@ -9,7 +9,7 @@ import Img4 from "./img/carsoulimg4.jpg"
 import Img5 from "./img/carsoulimg5.jpg"
 import womenImg  from "./img/women1.webp"
 import womenImg2 from "./img/women2.webp"
-import womenImg3 from "./img/women3.avif"
+import womenImg3 from "./img/women3.jpg"
 import { Link } from 'react-router-dom'
 import MenImg from "./img/mens1.jpg"
 import MenImg2 from "./img/mens2.jpg"
@@ -20,13 +20,18 @@ import kidsImg3 from "./img/kids3.jpg"
 import winterImg from "./img/winter1.jpg"
 import winterImg2 from "./img/winter2.webp"
 import winterImg3 from "./img/winter3.jpeg"
-// import Footer from './../../components/Footer/Footer'
-    // <Navbar/>
+import Footer from "../../Component/Footer/Footer"
+import GitImg from "./img/ICON/github-sign.png"
+import GmailImg from "./img/ICON/gmail (1).png"
+import GoogleImg from "./img/ICON/google-maps.png"
+import InstaImg from "./img/ICON/instagram (3).png"
+
+   
 
 function Home() {
   return (
     <>
-   
+       <Navbar/>
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
@@ -67,11 +72,12 @@ function Home() {
 
                 <div className='Brand-Head'>
                   <h1>Womens Collection</h1>
+                
                 </div>
-
+         
                  
                   <br/>
-
+                
                <div className=" text-center">
 
                 <div className="row">
@@ -130,8 +136,8 @@ function Home() {
               </div>
            </div>
           
-                    <Link to="/laptop" className="btn41-43 btn-42">
-                        View More
+                    <Link to="/WomensWear" className="btn41-43 btn-42">
+                        View 
                     </Link>
                     <br/>
 
@@ -201,8 +207,8 @@ function Home() {
            </div>
                <br/>
 
-        <Link to="/laptop" className="btn41-43 btn-42">
-                 View More
+        <Link to="/MensWear" className="btn41-43 btn-42">
+                 View 
         </Link>
 
         <br/>
@@ -221,7 +227,7 @@ function Home() {
                         <div class="card" index="width: 18rem;">
                             <img src={kidsImg} class="card-img-top" alt="..."/>
                             <div class="card-body">
-                                <h5 class="card-title">Abckids Custom Wholesale Big Kids Wear Vendor Summer Children Girl Clothing Kids Clothes Flower Girls Dress with Floral Print</h5>
+                                <h5 class="card-title">kids Custom Wholesale Big Kids Wear </h5>
                                <p className="card-text">From ₹999</p>
                             </div>
 
@@ -270,8 +276,8 @@ function Home() {
            </div>
                <br/>
 
-        <Link to="/laptop" className="btn41-43 btn-42">
-                 View More
+        <Link to="/KidsWear" className="btn41-43 btn-42">
+                 View 
         </Link>
 
 
@@ -346,8 +352,8 @@ function Home() {
    </div>
        <br/>
 
-        <Link to="/laptop" className="btn41-43 btn-42">
-         View More
+        <Link to="/" className="btn41-43 btn-42">
+         View 
         </Link>
 
         <br/>
@@ -357,23 +363,24 @@ function Home() {
           <div class="container text-center">
             <p>FIND US ON SOCIAL MEDIA</p>
     
-            {/* <div class="social-icons">
+            <div class="social-icons">
 
 
               <a href="a"><img src={GmailImg} alt=''/></a>
-              <a href="https://github.com/kunaldec022002/xiomi-store-reactproject/tree/main"><img src={GitImg} alt=''/></a>
+              <a href="https://github.com/hemantgaikwad13/ICP5_Final_Project"><img src={GitImg} alt=''/></a>
               <a href="a">
             <img src={InstaImg} alt=''/></a>
-              <a href="https://www.google.com/maps/search/xiaomi+center+pune/@18.5749739,73.7710354,12z/data=!3m1!4b1?authuser=0&entry=ttu"><img src={GoogleImg}/></a>
+              <a href="#"><img src={GoogleImg} alt=''/></a>
               
 
               
 
-            </div> */}
+            </div>
           </div>
          </section>
 
-             {/* <Footer/> */}
+         
+             <Footer/>
 
 
                   

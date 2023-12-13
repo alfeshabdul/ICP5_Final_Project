@@ -17,6 +17,7 @@ body{
 .cards-container{
     text-align: center;
     background-color: aliceblue;
+    display: flex;
     height: 510px;
     width: 300px;
     box-shadow: 2px 2px 3px 3px rgb(232, 226, 232);
