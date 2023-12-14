@@ -53,10 +53,10 @@ function Login() {
 
   return (
     <div>
-      <div className="login-container">
+      <div className="login-div">
         <h1 className="login-title">Login</h1>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Email</label>
           <input
             type="email"
@@ -69,7 +69,7 @@ function Login() {
           />
         </div>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Password</label>
           <input
             type="password"

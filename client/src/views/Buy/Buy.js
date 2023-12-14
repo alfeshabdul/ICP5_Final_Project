@@ -56,10 +56,12 @@ export default function Buy() {
     <div>
       <div className="buy-container">
         <img src={product.image} alt={product.name} className="buy-product-image" />
-        <div>
-          <h1>{product.name}</h1>
+        <div style={{
+          paddingTop:'1rem'
+        }}>
+          <h3>{product.name}</h3>
           <p>{product.description}</p>
-          <h1>₹ {product.price}</h1>
+          <h3>₹ {product.price}</h3>
 
           <div className="quantity-container">
             <button
@@ -87,7 +89,7 @@ export default function Buy() {
             }}
           />
 
-          <button type="button" className="buy-btn" onClick={placeOrder}>
+          <button type="button" className="order-btn" onClick={placeOrder}>
             Place Order
           </button>
         </div>

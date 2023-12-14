@@ -50,10 +50,10 @@ function Signup() {
 
   return (
     <div>
-      <div className="signup-container">
-        <h1 className="signup-title">Signup</h1>
+      <div className="signup-div">
+        <h3 className="signup-title">Signup</h3>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Name</label>
           <input
             type="text"
@@ -66,7 +66,7 @@ function Signup() {
           />
         </div>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Email</label>
           <input
             type="email"
@@ -79,7 +79,7 @@ function Signup() {
           />
         </div>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Password</label>
           <input
             type="password"
@@ -92,7 +92,7 @@ function Signup() {
           />
         </div>
 
-        <div className="input-container">
+        <div className="input-div">
           <label className="input-label">Mobile</label>
           <input
             type="text"

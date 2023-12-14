@@ -4,6 +4,8 @@ import ProductCard from "../../Component/ProductCard/ProductCard.js";
 import { checkLogin } from '../../utils/auth';
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/ReactToastify.css";
+import "./MensProduct.css"
+import { Link } from "react-router-dom";
 
 function MensWear() {
  
@@ -28,13 +30,14 @@ function MensWear() {
     window.location.href = "/";
   };
 
-
+  
 
   return (
     <>
-    <div>
-      <button onClick={logout}>Logout</button>
-    </div>
+    <div className="nav-menus-div">
+      <Link to="/" className="home-link">Home</Link>
+      <button onClick={logout} className="logout-btn">Logout</button>
+      </div>
      
       {products?.map((mproduct, index) => {
         const { _id, name, description, price, image, _category} = mproduct;

@@ -3,16 +3,15 @@
     justify-content: space-around;
     flex-wrap: wrap;
     padding: 5px 10px;
+    height: 85vh;
   }
   
   .buy-product-image{
-    height: 400px;
+    height: 95%;
     margin: 20px;
-    padding: 20px;
     background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  }
+   
+     }
   
   .quantity-btn{
     height: 40px;
@@ -21,7 +20,7 @@
   }
   
   .quantity-text{
-    font-size: 40px;
+    font-size: 1.3rem;
     font-weight: bold;
     margin: 0 10px;
   }
@@ -32,25 +31,25 @@
   }
   
   .shipping-address{
-    width: 300px;
-    margin: 20px;
+    width: 25rem;
+    margin-block: 20px;
     font-size: 20px;
     padding: 10px 20px;
   }
-/*   
-  .buy-btn{
-    background-color: #000;
-    color: #fff;
-    padding: 10px 20px;
-    font-size: 20px;
-    display: block;
-    margin: 20px auto;
-    border-radius: 50px;
-    cursor: pointer;
-  } */
-  
+
+  .order-btn{
+    width: 80%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: black;
+    font-size: 1.2rem;
+    border: none;
+    padding-block: 1rem;
+  }
+
   @media screen and (max-width: 768px){
     .buy-product-image{
-      height: 200px;
+      /* height: 200px; */
     }
   }

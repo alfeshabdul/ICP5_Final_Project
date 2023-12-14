@@ -245,18 +245,6 @@ app.post("/login", async (req, res) => {
   }
 });
 
-// added by me
-// app.delete("/login/:id", async (req, res) => {
-//   const { id } = req.params;
-//   const user = await User.findOne({user: id, email: email, password: password });
-
-//   await user.deleteOne();
-
-//   res.json({
-//     success: true,
-//     message: "User logged out successfully",
-//   });
-// });
 
 app.post("/order", async (req, res) => {
   const { product, user, quantity, shippingAddress } = req.body;
