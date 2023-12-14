@@ -1,6 +1,6 @@
 import {model, Schema}from "mongoose";
 
-const mensproductSchema= new Schema({
+const kidsproductSchema= new Schema({
     image:{
         type: String,
         require: true
@@ -16,13 +16,9 @@ const mensproductSchema= new Schema({
     description:{
         type: String,
         require: true
-    },
-    category:{
-        type: String,
-        require: true
     }
 });
 
-const mensproduct = model('MensProduct', mensproductSchema);
+const kidsproduct = model('KidsProduct', kidsproductSchema);
 
-export default mensproduct;
+export default kidsproduct;

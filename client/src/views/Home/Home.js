@@ -378,15 +378,12 @@ function Home() {
             </div>
           </div>
          </section>
+         
 
          
              <Footer/>
 
-
-                  
-    </>              
-
+ </>
   )
 }
-
 export default Home
