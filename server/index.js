@@ -2,7 +2,6 @@ import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
 
-
 import mongoose from "mongoose";
 import Mensproduct from "./models/Product.js";
 import Womensproduct from "./models/WomrnsProduct.js";
@@ -31,7 +30,7 @@ app.post("/mensproducts", async (req, res) => {
     price: price,
     description: description,
     image: image,
-    category: category
+    category: category,
   });
 
   try {
@@ -59,6 +58,30 @@ app.get("/mensproducts", async (req, res) => {
     message: "Products Retrieved successfully",
   });
 });
+
+app.get("/mensproducts/:id", async (req, res) => {
+  const { id } = req.params;
+
+  const mensproduct = await Mensproduct.findOne({ _id: id });
+
+  res.json({
+    success: true,
+    data: mensproduct,
+    message: "Product retrieved successfully",
+  });
+});
+
+// app.get("/mensproducts/:category", async (req, res) => {
+//   const { category } = req.params;
+
+//   const mensproductc = await Mensproduct.find({ _category: category });
+
+//   res.json({
+//     success: true,
+//     data: mensproductc,
+//     message: "Product retrieved successfully",
+//   });
+// });
 
 app.delete("/mensproducts/:id", async (req, res) => {
   const { id } = req.params;
@@ -206,7 +229,6 @@ app.post("/Signup", async (req, res) => {
 
 app.post("/login", async (req, res) => {
   const { email, password } = req.body;
-
   const user = await User.findOne({ email: email, password: password });
 
   if (user) {
@@ -222,6 +244,19 @@ app.post("/login", async (req, res) => {
     });
   }
 });
+
+// added by me
+// app.delete("/login/:id", async (req, res) => {
+//   const { id } = req.params;
+//   const user = await User.findOne({user: id, email: email, password: password });
+
+//   await user.deleteOne();
+
+//   res.json({
+//     success: true,
+//     message: "User logged out successfully",
+//   });
+// });
 
 app.post("/order", async (req, res) => {
   const { product, user, quantity, shippingAddress } = req.body;
