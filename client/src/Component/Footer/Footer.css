@@ -1,14 +1,14 @@
 #footer
 {
-    background:#8FBB;
-    color: #fff;
+    background:black;
+    color: white;
 }
 
 .footer-box
 {
     text-wrap: wrap;
     padding: 20px;
-    color: black;
+    color: white;
 }
 .footer-box img
 {
@@ -28,7 +28,7 @@
  .form-control
  {
     margin-left: 200px;
-    border:1px solid black;
+    border:1px solid white;
     border-radius: 10px;
     margin-top: 25px;
     max-width: 250px;
@@ -42,7 +42,7 @@
     border: none;
     border-radius: 7px;
     margin-top: 30px;
-    background-color:#7b1798;
+    background-color:rgb(207, 114, 129);
  }
 
  hr
@@ -60,7 +60,7 @@
 
 .footer-quick-link
 {
-    color:black;
+    color:white;
     text-decoration: none;
 }
 .banner-content
@@ -76,7 +76,7 @@ input,button
 
 .Faq-text
 {
-    color: black;
+    color: white;
    margin-left: 220px;
 }
 #submit-btn
