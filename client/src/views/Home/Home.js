@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Home.css"
-import Card from '../../Component/Card/Card'
+// import Card from '../../Component/Card/Card'
 import Navbar from '../../Component/Navbar/Navbar'
 import Img1 from "./img/carsoulimg.jpg"
 import Img2 from "./img/carsoulimg2.webp"
@@ -370,7 +370,7 @@ function Home() {
               <a href="https://github.com/hemantgaikwad13/ICP5_Final_Project"><img src={GitImg} alt=''/></a>
               <a href="a">
             <img src={InstaImg} alt=''/></a>
-              <a href="#"><img src={GoogleImg} alt=''/></a>
+              <a href="https://blog.hubspot.com/marketing/google-logo-history"><img src={GoogleImg} alt=''/></a>
               
 
               
