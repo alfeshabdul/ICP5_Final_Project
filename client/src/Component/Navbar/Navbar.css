@@ -1,6 +1,6 @@
 .navbar
 {
-  background-color:#8FBB;
+  background-color:rgb(146, 66, 80);
 }
 .home-brand-img
 {
@@ -82,14 +82,8 @@
   }
   
   .bn632-hover.bn27 {
-    background-image: linear-gradient(
-      to right,
-      #ed6ea0,
-      #ec8c69,
-      #f7186a,
-      #fbb03b
-    );
-    box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+    background-color:rgb(217, 134, 148) ;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;;
   }
 
   /* button 2 */
@@ -126,14 +120,8 @@
   }
   
   .bn636-hover.bn22 {
-    background-image: linear-gradient(
-      to right,
-      #0ba360,
-      #3cba92,
-      #30dd8a,
-      #2bb673
-    );
-    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    background-color: rgb(217, 134, 148);
+    box-shadow: 0 4px 15px 0 rgba(9, 10, 9, 0.75);
   }
 
   .form-control

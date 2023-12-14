@@ -32,27 +32,27 @@ function Footer()
    
    
        <h5>
-        <Link to="/laptop" className="footer-quick-link">Laptop&Tablets</Link>
+        <Link to="/WomensWear" className="footer-quick-link">WomensWear</Link>
         </h5>
     
 
    
         <h5> 
-          <Link to="/smartphone"  className="footer-quick-link">Smartphones</Link>
+          <Link to="/MensWear"  className="footer-quick-link">MensWear</Link>
         </h5>
     
 
     
       <h5> 
-        <Link to="/tv" className="footer-quick-link">TV</Link>
+        <Link to="/KidsWear" className="footer-quick-link">KidsWear</Link>
       </h5> 
 
       <h5> 
-        <Link to="/login" className="footer-quick-link">Login</Link>
+        <Link to="/Login" className="footer-quick-link">Login</Link>
       </h5> 
 
       <h5> 
-        <Link to="/signup" className="footer-quick-link">signup</Link>
+        <Link to="/Signup" className="footer-quick-link">signup</Link>
       </h5> 
  
 
@@ -62,13 +62,13 @@ function Footer()
     <div className="col-md-4 footer-box">
       <p><b>Address</b></p>
       <p>
-        <img src={MapImg} className="direction"/>
+        <img src={MapImg} className="direction" alt=""/>
          Trade Centre,Banglore</p>
       <p>
-        <img src={ContactImg}  className="direction"/>
+        <img src={ContactImg}  className="direction" alt=""/>
          +9110020210210</p>
       <p>
-        <img src={GmailImg}  className="direction"/> XiaomiCenter500@gmail.com</p>
+        <img src={GmailImg}  className="direction" alt=""/> Clothing56@gmail.com</p>
     </div>
 
     
