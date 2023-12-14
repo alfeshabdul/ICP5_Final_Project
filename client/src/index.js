@@ -1,7 +1,7 @@
 import ReactDom from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Home from "./views/Home/Home";
-import MensProduct from "./views/MensWear/MensWear";
+import MensProduct from "./views/MensProduct/MensProduct";
 import Womensproduct from "./views/WomensWear/WomensWear";
 import Kidsproduct from "./views/KidsWear/KidsWear";
 import Signup from "./views/Signup/Signup";
