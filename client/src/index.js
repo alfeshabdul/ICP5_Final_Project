@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         "element":<Mensproduct/>
     },
     {
-        "path":"/womensproducts",
+        "path":"/womenswear",
         "element":<Womensproduct/>
     },
     {
