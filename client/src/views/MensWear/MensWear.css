@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 50vh;
+}
+
+.mimages{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.shirt-img, .pant-img, .blazer-img, .tshirt-img{
+    width: 50%;
+    height: 100%;
+}
+
+.menswear-link{
+    position:absolute;
+    color: whitesmoke;
+    font-size: 2rem;
+    border: .2rem solid white;
+    padding: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    top: 35%;
+    left: 35%;
+}
+
+.color-black{
+    color: black;
+    border-color: black;
+}
+
+.menswear-link:hover{
+  transform: scale(.95);
+  transition-duration: .6s;
+  background-color: rgba(185, 185, 185, 0.557);
+}
