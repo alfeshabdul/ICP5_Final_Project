@@ -1,24 +1,46 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import ProductCard from "../../components/ProductCard/ProductCard.js";
+import ProductCard from "../../Component/ProductCard/ProductCard.js";
+import { checkLogin } from '../../utils/auth';
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/ReactToastify.css";
+import "./MensProduct.css"
+import { Link } from "react-router-dom";
 
 function MensWear() {
+ 
   const [products, setProducts] = useState([]);
 
-  const loadProducts = async () => {
-    const response = await axios.get('/mensproducts');
+  const loadProducts = async () =>{
+    const response = await axios.get("/mensproducts");
     setProducts(response?.data?.data);
   };
 
-  useEffect(() => {
+  useEffect(()=>{
+    checkLogin();
     loadProducts();
   }, []);
 
+  const logout = async () => {
+    localStorage.removeItem("user");
+    toast.success("USER lOGGED OUT SUCCESSFULLY", {
+      position: "top-center",
+       autoclose: 700
+    });
+    window.location.href = "/";
+  };
+
+  
+
   return (
     <>
+    <div className="nav-menus-div">
+      <Link to="/" className="home-link">Home</Link>
+      <button onClick={logout} className="logout-btn">Logout</button>
+      </div>
      
       {products?.map((mproduct, index) => {
-        const { _id, name, description, price, image, category} = mproduct;
+        const { _id, name, description, price, image, _category} = mproduct;
         return (
           <ProductCard
             key={index}
@@ -27,10 +49,11 @@ function MensWear() {
             description={description}
             price={price}
             image={image}
-            category={category}
+            category={_category}
           />
         );
       })}
+      <ToastContainer/>
     </>
   );
 }

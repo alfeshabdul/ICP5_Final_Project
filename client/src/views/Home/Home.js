@@ -29,6 +29,7 @@ import InstaImg from "./img/ICON/instagram (3).png"
    
 
 function Home() {
+ 
   return (
     <>
        <Navbar/>
