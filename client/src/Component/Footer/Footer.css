@@ -1,85 +1,82 @@
-#footer
-{
-    background:black;
-    color: white;
-}
-
-.footer-box
-{
-    text-wrap: wrap;
-    padding: 20px;
-    color: white;
-}
-.footer-box img
-{
-    width: 60px;
-    margin-top: 10px;
-}
-
- .footer-box .direction
-{
- margin-right: 8px;
- font-size: 25px;
- height: 30px;
- width:30px;
- text-align: center;
- }
-
- .form-control
- {
-    margin-left: 200px;
-    border:1px solid white;
-    border-radius: 10px;
-    margin-top: 25px;
-    max-width: 250px;
-    width: 450px;
+/* #footer{
+    width: 100vw;
+    background: black;
     
- }
-
- .footer-box .btn-primary
- {
-    box-shadow: none !important;
-    border: none;
-    border-radius: 7px;
-    margin-top: 30px;
-    background-color:rgb(207, 114, 129);
- }
-
- hr
- {
-    background-color: #fff;
-    height: 5px;
- }
-
-.copyright
-{
-    margin-bottom: 0;
-    padding-bottom: 20px;
-    text-align: center;
+} */
+#footer {
+  background: black;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.footer-quick-link
-{
-    color:white;
-    text-decoration: none;
+.footer-box {
+  text-wrap: wrap;
+  padding-block: 20px;
+  color: white;
 }
-.banner-content
-{
-    font-size: 20px;
-    text-align: center;
-}
-
-input,button
-{
-    margin-left: 170px;
+.footer-box img {
+  width: 60px;
+  margin-top: 10px;
 }
 
-.Faq-text
-{
-    color: white;
-   margin-left: 220px;
+.footer-box .direction {
+  font-size: 25px;
+  /* height: 30px; */
+  width: 30px;
+  text-align: center;
 }
-#submit-btn
-{
-    margin-left: 280px;
+
+.form-control {
+  border: 1px solid white;
+  border-radius: 0;
+  margin-top: 25px;
+  width: 100%;
+}
+
+.footer-box .btn-primary {
+  box-shadow: none !important;
+  border: none;
+  /* border-radius: 7px; */
+  margin-top: 30px;
+  background-color: rgb(207, 114, 129);
+}
+
+.copyright {
+  margin-bottom: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.footer-quick-link {
+  color: white;
+  text-decoration: none;
+}
+.banner-content {
+  font-size: 20px;
+  text-align: center;
+}
+
+.Faq-text {
+  color: white;
+}
+#submit-btn {
+  background-color: #c7c7c7;
+  font-size: 1rem;
+  color: black;
+  border-radius: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.6rem;
+    padding-inline: 3.2rem;
+  }
+  .footer-box {
+    width: 85%;
+  }
 }

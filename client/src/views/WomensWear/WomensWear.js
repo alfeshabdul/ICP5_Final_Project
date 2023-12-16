@@ -31,7 +31,7 @@ function WomensWear() {
   return (
     <div>
       <div>
-      <img src={Image} className="poster-img"/>
+      <img src={Image} className="poster-img" alt='' />
       <button className="btn">Shop now</button>
       </div>
       <h1 className="Heading"><u>Top's & T-Shirt</u></h1>
@@ -39,7 +39,7 @@ function WomensWear() {
       <section>
       <div className="Container">
         <div className="cont">
-         <img src={Img1}/>
+         <img src={Img1} alt='' />
          <div className="Text">
          <span>Product1</span><br></br>
          <span>Rs.500</span><br></br><br></br>
@@ -48,7 +48,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img2}/>
+        <img src={Img2} alt='' />
         <div className="Text">
          <span>Product2</span><br></br>
          <span>Rs.400</span><br></br><br></br>
@@ -57,7 +57,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img3}/>
+        <img src={Img3} alt='' />
         <div className="Text">
          <span>Product3</span><br></br>
          <span>Rs.700</span><br></br><br></br>
@@ -66,7 +66,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img4}/>
+        <img src={Img4} alt='' />
         <div className="Text">
          <span>Product4</span><br></br>
          <span>Rs.800</span><br></br><br></br>
@@ -77,7 +77,7 @@ function WomensWear() {
 
        <div className="Container">
         <div className="cont">
-         <img src={Img5}/>
+         <img src={Img5} alt='' />
          <div className="Text">
          <span>Product5</span><br></br>
          <span>Rs.300</span><br></br><br></br>
@@ -86,7 +86,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img6}/>
+        <img src={Img6} alt='' />
         <div className="Text">
          <span>Product6</span><br></br>
          <span>Rs.450</span><br></br><br></br>
@@ -95,7 +95,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img7}/>
+        <img src={Img7} alt='' />
         <div className="Text">
          <span>Product7</span><br></br>
          <span>Rs.350</span><br></br><br></br>
@@ -104,7 +104,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img8}/>
+        <img src={Img8} alt='' />
         <div className="Text">
          <span>Product8</span><br></br>
          <span>Rs.299</span><br></br><br></br>
@@ -119,7 +119,7 @@ function WomensWear() {
       <section>
       <div className="Container">
         <div className="cont">
-         <img src={Img9}/>
+         <img src={Img9} alt='' />
          <div className="Text">
          <span>Ankle Length</span><br></br>
          <span>Rs.700</span><br></br><br></br>
@@ -128,7 +128,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img10}/>
+        <img src={Img10} alt='' />
         <div className="Text">
          <span> Mom fit jeans</span><br></br>
          <span>Rs.800</span><br></br><br></br>
@@ -137,7 +137,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img11}/>
+        <img src={Img11} alt='' />
         <div className="Text">
          <span>Slim fit</span><br></br>
          <span>Rs.700</span><br></br><br></br>
@@ -146,7 +146,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img12}/>
+        <img src={Img12} alt='' />
         <div className="Text">
          <span>Skinny jeans</span><br></br>
          <span>Rs.800</span><br></br><br></br>
@@ -157,7 +157,7 @@ function WomensWear() {
 
        <div className="Container">
         <div className="cont">
-         <img src={Img13}/>
+         <img src={Img13} alt=''/>
          <div className="Text">
          <span>Bootcut</span><br></br>
          <span>Rs.600</span><br></br><br></br>
@@ -166,7 +166,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img14}/>
+        <img src={Img14} alt='' />
         <div className="Text">
          <span>Straight fit</span><br></br>
          <span>Rs.800</span><br></br><br></br>
@@ -175,7 +175,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img15}/>
+        <img src={Img15} alt='' />
         <div className="Text">
          <span>Jogger's</span><br></br>
          <span>Rs.350</span><br></br><br></br>
@@ -184,7 +184,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img16}/>
+        <img src={Img16} alt='' />
         <div className="Text">
          <span>mom jeans</span><br></br>
          <span>Rs.400</span><br></br><br></br>
@@ -199,7 +199,7 @@ function WomensWear() {
       <section>
       <div className="Container">
         <div className="cont">
-         <img src={Img17}/>
+         <img src={Img17} alt='' />
          <div className="Text">
          <span>Bodycon Maxi dress</span><br></br>
          <span>Rs.400</span><br></br><br></br>
@@ -208,7 +208,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img18}/>
+        <img src={Img18} alt='' />
         <div className="Text">
          <span>Plated Bodycon Dress</span><br></br>
          <span>Rs.500</span><br></br><br></br>
@@ -217,7 +217,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img19}/>
+        <img src={Img19} alt='' />
         <div className="Text">
          <span>A-line dress</span><br></br>
          <span>Rs.600</span><br></br><br></br>
@@ -226,7 +226,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img20}/>
+        <img src={Img20} alt='' />
         <div className="Text">
          <span>Split Bodycon dress</span><br></br>
          <span>Rs.12,00</span><br></br><br></br>
@@ -238,7 +238,7 @@ function WomensWear() {
 
        <div className="Container">
         <div className="cont">
-         <img src={Img21}/>
+         <img src={Img21} alt='' />
          <div className="Text">
          <span>Lahenga Choli</span><br></br>
          <span>Rs.2,890</span><br></br><br></br>
@@ -247,7 +247,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img22}/>
+        <img src={Img22} alt='' />
         <div className="Text">
          <span> GoSriKi Women Kurta<br></br> With Dupatta</span><br></br>
          <span>Rs.800</span><br></br><br></br>
@@ -256,7 +256,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img23}/>
+        <img src={Img23} alt='' />
         <div className="Text">
          <span>A-line Kurta</span><br></br>
          <span>Rs.900</span><br></br><br></br>
@@ -265,7 +265,7 @@ function WomensWear() {
         </div>
 
         <div className="cont">
-        <img src={Img24}/>
+        <img src={Img24} alt='' />
         <div className="Text">
          <span>Embroidery Long Kurti </span><br></br>
          <span>Rs.1000</span><br></br><br></br>

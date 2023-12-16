@@ -30,7 +30,7 @@ app.post("/mensproducts", async (req, res) => {
     price: price,
     description: description,
     image: image,
-    category: category,
+    category: category
   });
 
   try {
@@ -61,7 +61,7 @@ app.get("/mensproducts", async (req, res) => {
 
 app.get("/mensproducts/:id", async (req, res) => {
   const { id } = req.params;
-
+  
   const mensproduct = await Mensproduct.findOne({ _id: id });
 
   res.json({
@@ -74,11 +74,11 @@ app.get("/mensproducts/:id", async (req, res) => {
 // app.get("/mensproducts/:category", async (req, res) => {
 //   const { category } = req.params;
 
-//   const mensproductc = await Mensproduct.find({ _category: category });
+//   const mensproduct = await Mensproduct.find({ _category: category });
 
 //   res.json({
 //     success: true,
-//     data: mensproductc,
+//     data: mensproduct,
 //     message: "Product retrieved successfully",
 //   });
 // });
@@ -244,7 +244,6 @@ app.post("/login", async (req, res) => {
     });
   }
 });
-
 
 app.post("/order", async (req, res) => {
   const { product, user, quantity, shippingAddress } = req.body;

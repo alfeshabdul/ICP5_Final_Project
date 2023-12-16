@@ -40,7 +40,7 @@ body {
   /* margin-top: .2rem; */
 }
 
-.product-info p{
+.product-info p {
   margin-top: 0;
   margin-bottom: 3px;
 }
@@ -48,7 +48,7 @@ body {
 .card-btn {
   padding: 5px;
   cursor: pointer;
-  margin-block: .3rem;
+  margin-block: 0.3rem;
   padding-block: 0.7rem;
 }
 
@@ -60,7 +60,6 @@ body {
   background-color: black;
   font-size: 1.2rem;
   border: none;
-
 }
 
 .wishlist-btn {
@@ -68,11 +67,38 @@ body {
   background-color: #e1e1e1;
   font-size: 1rem;
   border: none;
-  margin-bottom: .5rem;
-
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-.card-btn:hover{
-  transform: scale(.98);
-  transition-duration: .7s;
+.card-btn:hover {
+  transform: scale(0.98);
+  transition-duration: 0.7s;
+}
+
+@media screen and (max-width: 600px) {
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+
   }
+  .product-img{
+    width: 85%;
+
+  }
+  .product-info{
+    width: 85%;
+  }
+
+.card-btn{
+  width: 100%;
+}
+.product-info>:nth-child(1){
+  margin-top: .3rem;
+}
+.product-info>:nth-child(9){
+  display: none;
+}
+}

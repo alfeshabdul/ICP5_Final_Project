@@ -7,8 +7,8 @@ import Signup from "./views/Signup/Signup";
 import Login from "./views/Login/Login";
 import Buy from "./views/Buy/Buy";
 import "./index.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 import MyOrder from './views/MyOrders/MyOrders';
 import MensWear from './views/MensWear/MensWear';

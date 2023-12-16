@@ -18,8 +18,7 @@ function MyOrders() {
   const deleteOrder = async() => {
     const user = JSON.parse(localStorage.getItem("user")) || null;
     const response = await axios.delete(`/orders?id=${user._id}`)
-    // localStorage.removeItem("userlogininfo");
-  
+     
     if(response.data.success){
       alert(response.data.message);
       window.location.reload();
