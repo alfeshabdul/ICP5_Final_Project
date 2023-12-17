@@ -38,7 +38,7 @@ export default function Buy() {
     loadProduct();
     const user = JSON.parse(localStorage.getItem("user"));
     setUser(user);
-  },[]);
+  }, []);
 
   const placeOrder = async () => {
     const response = await axios.post("/order", {
@@ -55,27 +55,32 @@ export default function Buy() {
   return (
     <div>
       <div className="buy-container">
-        <img src={product.image} alt={product.name} className="buy-product-image" />
-        <div style={{
-          paddingTop:'1rem'
-        }}>
+        <img
+          src={product.image}
+          alt={product.name}
+          className="buy-product-image"
+        />
+        <div
+          style={{
+            paddingTop: "1rem",
+          }}
+        >
           <h3>{product.name}</h3>
           <p>{product.description}</p>
           <h3>₹ {product.price}</h3>
 
           <div className="quantity-container">
-            <button
-              //   src={ImgDec}
-              onClick={decreaseQuantity}
-              className="quantity-btn"
-            >
-              ▼
-            </button>
+            <span style={{ fontSize: "1.2rem", marginRight: "0.5rem" }}>
+              QUANTITY :{" "}
+            </span>
 
             <span className="quantity-text">{quantity}</span>
 
             <button onClick={increaseQuantity} className="quantity-btn">
               ▲
+            </button>
+            <button onClick={decreaseQuantity} className="quantity-btn">
+              ▼
             </button>
           </div>
 

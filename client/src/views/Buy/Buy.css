@@ -14,20 +14,21 @@
      }
   
   .quantity-btn{
-    height: 40px;
-    width: 40px;
+    height: 2rem;
+    width: 2rem;
     cursor: pointer;
   }
   
   .quantity-text{
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 0 10px;
+
   }
   
   .quantity-container{
     display: flex;
     align-items: center;
+    gap: .4rem;
   }
   
   .shipping-address{
@@ -48,8 +49,6 @@
     padding-block: 1rem;
   }
 
-  @media screen and (max-width: 768px){
-    .buy-product-image{
-      /* height: 200px; */
-    }
+  @media screen and (max-width: 600px){
+ 
   }
